@@ -68,9 +68,11 @@ class MorphingViewController: UIViewController, LTMorphingLabelDelegate {
             self.morphingLabel.morphingEffect = .anvil
         default:
             self.name.text = "scale"
-            print("scale")
         }
+        
+        // Label textが更新されたタイミングでanimationする
         self.morphingLabel.text = self.textArray[pressCount]
+        
         if pressCount == 7 {
             pressCount = 0
         }
@@ -81,14 +83,11 @@ class MorphingViewController: UIViewController, LTMorphingLabelDelegate {
 
 extension MorphingViewController {
     func morphingDidStart(_ label: LTMorphingLabel) {
-        print("morphing did start")
     }
     
     func morphingDidComplete(_ label: LTMorphingLabel) {
-        print("morphing did complete")
     }
     
     func morphingOnProgress(_ label: LTMorphingLabel, progress: Float) {
-        print("morphing on progress")
     }
 }

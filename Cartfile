@@ -1,0 +1,8 @@
+#文字にエフェクトを加えることができるインパクトありそう
+github "lexrus/LTMorphingLabel" "swift3"
+
+#サークル状のプログラスライブラリ(変形した形でもいける星型とか)
+github "kentya6/KYCircularProgress"
+
+#サイドバー(ドロワー)
+github "ykyouhei/KYDrawerController"

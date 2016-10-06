@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91D17B211DA638F70057AF32 /* KYCircularProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D17B1E1DA638F70057AF32 /* KYCircularProgress.framework */; };
+		91D17B221DA638F70057AF32 /* KYDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D17B1F1DA638F70057AF32 /* KYDrawerController.framework */; };
+		91D17B231DA638F70057AF32 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D17B201DA638F70057AF32 /* LTMorphingLabel.framework */; };
+		91D17B281DA63A080057AF32 /* MorphingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D17B271DA63A080057AF32 /* MorphingViewController.swift */; };
 		F22C05F81DA5F142002FB4AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22C05F71DA5F142002FB4AD /* AppDelegate.swift */; };
 		F22C05FA1DA5F142002FB4AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22C05F91DA5F142002FB4AD /* ViewController.swift */; };
 		F22C05FD1DA5F142002FB4AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22C05FB1DA5F142002FB4AD /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91D17B1E1DA638F70057AF32 /* KYCircularProgress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KYCircularProgress.framework; path = Carthage/Build/iOS/KYCircularProgress.framework; sourceTree = "<group>"; };
+		91D17B1F1DA638F70057AF32 /* KYDrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KYDrawerController.framework; path = Carthage/Build/iOS/KYDrawerController.framework; sourceTree = "<group>"; };
+		91D17B201DA638F70057AF32 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
+		91D17B271DA63A080057AF32 /* MorphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorphingViewController.swift; path = ../MorphingViewController.swift; sourceTree = "<group>"; };
 		F22C05F41DA5F142002FB4AD /* ui_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22C05F71DA5F142002FB4AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F22C05F91DA5F142002FB4AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D17B211DA638F70057AF32 /* KYCircularProgress.framework in Frameworks */,
+				91D17B221DA638F70057AF32 /* KYDrawerController.framework in Frameworks */,
+				91D17B231DA638F70057AF32 /* LTMorphingLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91D17B1D1DA638F60057AF32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91D17B1E1DA638F70057AF32 /* KYCircularProgress.framework */,
+				91D17B1F1DA638F70057AF32 /* KYDrawerController.framework */,
+				91D17B201DA638F70057AF32 /* LTMorphingLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F22C05EB1DA5F142002FB4AD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +104,7 @@
 				F22C060E1DA5F142002FB4AD /* ui_sampleTests */,
 				F22C06191DA5F142002FB4AD /* ui_sampleUITests */,
 				F22C05F51DA5F142002FB4AD /* Products */,
+				91D17B1D1DA638F60057AF32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +126,7 @@
 				F22C05FB1DA5F142002FB4AD /* Main.storyboard */,
 				F22C06011DA5F142002FB4AD /* Assets.xcassets */,
 				F22C06031DA5F142002FB4AD /* LaunchScreen.storyboard */,
+				91D17B271DA63A080057AF32 /* MorphingViewController.swift */,
 				F22C06061DA5F142002FB4AD /* Info.plist */,
 				F22C05FE1DA5F142002FB4AD /* ui_sample.xcdatamodeld */,
 			);
@@ -138,6 +161,7 @@
 				F22C05F01DA5F142002FB4AD /* Sources */,
 				F22C05F11DA5F142002FB4AD /* Frameworks */,
 				F22C05F21DA5F142002FB4AD /* Resources */,
+				91D17B241DA639230057AF32 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -260,6 +284,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91D17B241DA639230057AF32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KYCircularProgress.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KYDrawerController.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/LTMorphingLabel.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F22C05F01DA5F142002FB4AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,6 +310,7 @@
 			files = (
 				F22C05FA1DA5F142002FB4AD /* ViewController.swift in Sources */,
 				F22C05F81DA5F142002FB4AD /* AppDelegate.swift in Sources */,
+				91D17B281DA63A080057AF32 /* MorphingViewController.swift in Sources */,
 				F22C06001DA5F142002FB4AD /* ui_sample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +462,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9DHPQY55WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ui_sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "myown.ui-sample";
@@ -431,6 +479,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9DHPQY55WF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ui_sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "myown.ui-sample";
@@ -516,6 +568,7 @@
 				F22C06211DA5F142002FB4AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22C06221DA5F142002FB4AD /* Build configuration list for PBXNativeTarget "ui_sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +577,7 @@
 				F22C06241DA5F142002FB4AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22C06251DA5F142002FB4AD /* Build configuration list for PBXNativeTarget "ui_sampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +586,7 @@
 				F22C06271DA5F142002FB4AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

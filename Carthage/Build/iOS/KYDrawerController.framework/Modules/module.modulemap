@@ -1,0 +1,10 @@
+framework module KYDrawerController {
+  umbrella header "KYDrawerController.h"
+
+  export *
+  module * { export * }
+}
+
+module KYDrawerController.Swift {
+    header "KYDrawerController-Swift.h"
+}

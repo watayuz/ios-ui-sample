@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91A94F771DA65F3100611C25 /* FillableLoaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A94F761DA65F3100611C25 /* FillableLoaders.framework */; };
+		91A94F791DA6637000611C25 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A94F781DA6637000611C25 /* Paths.swift */; };
+		91A94F7B1DA6647600611C25 /* FillableLoadrerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A94F7A1DA6647600611C25 /* FillableLoadrerViewController.swift */; };
 		91D17B211DA638F70057AF32 /* KYCircularProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D17B1E1DA638F70057AF32 /* KYCircularProgress.framework */; };
 		91D17B221DA638F70057AF32 /* KYDrawerController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D17B1F1DA638F70057AF32 /* KYDrawerController.framework */; };
 		91D17B231DA638F70057AF32 /* LTMorphingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91D17B201DA638F70057AF32 /* LTMorphingLabel.framework */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91A94F761DA65F3100611C25 /* FillableLoaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FillableLoaders.framework; path = Carthage/Build/iOS/FillableLoaders.framework; sourceTree = "<group>"; };
+		91A94F781DA6637000611C25 /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		91A94F7A1DA6647600611C25 /* FillableLoadrerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillableLoadrerViewController.swift; sourceTree = "<group>"; };
 		91D17B1E1DA638F70057AF32 /* KYCircularProgress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KYCircularProgress.framework; path = Carthage/Build/iOS/KYCircularProgress.framework; sourceTree = "<group>"; };
 		91D17B1F1DA638F70057AF32 /* KYDrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KYDrawerController.framework; path = Carthage/Build/iOS/KYDrawerController.framework; sourceTree = "<group>"; };
 		91D17B201DA638F70057AF32 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A94F771DA65F3100611C25 /* FillableLoaders.framework in Frameworks */,
 				91D17B211DA638F70057AF32 /* KYCircularProgress.framework in Frameworks */,
 				91D17B221DA638F70057AF32 /* KYDrawerController.framework in Frameworks */,
 				91D17B231DA638F70057AF32 /* LTMorphingLabel.framework in Frameworks */,
@@ -90,6 +97,7 @@
 		91D17B1D1DA638F60057AF32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91A94F761DA65F3100611C25 /* FillableLoaders.framework */,
 				91D17B1E1DA638F70057AF32 /* KYCircularProgress.framework */,
 				91D17B1F1DA638F70057AF32 /* KYDrawerController.framework */,
 				91D17B201DA638F70057AF32 /* LTMorphingLabel.framework */,
@@ -123,9 +131,11 @@
 			children = (
 				F22C05F71DA5F142002FB4AD /* AppDelegate.swift */,
 				F22C05F91DA5F142002FB4AD /* ViewController.swift */,
+				91A94F781DA6637000611C25 /* Paths.swift */,
 				F22C05FB1DA5F142002FB4AD /* Main.storyboard */,
 				F22C06011DA5F142002FB4AD /* Assets.xcassets */,
 				F22C06031DA5F142002FB4AD /* LaunchScreen.storyboard */,
+				91A94F7A1DA6647600611C25 /* FillableLoadrerViewController.swift */,
 				91D17B271DA63A080057AF32 /* MorphingViewController.swift */,
 				F22C06061DA5F142002FB4AD /* Info.plist */,
 				F22C05FE1DA5F142002FB4AD /* ui_sample.xcdatamodeld */,
@@ -294,6 +304,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/KYCircularProgress.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KYDrawerController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/LTMorphingLabel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FillableLoaders.framework",
 			);
 			outputPaths = (
 			);
@@ -308,8 +319,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A94F791DA6637000611C25 /* Paths.swift in Sources */,
 				F22C05FA1DA5F142002FB4AD /* ViewController.swift in Sources */,
 				F22C05F81DA5F142002FB4AD /* AppDelegate.swift in Sources */,
+				91A94F7B1DA6647600611C25 /* FillableLoadrerViewController.swift in Sources */,
 				91D17B281DA63A080057AF32 /* MorphingViewController.swift in Sources */,
 				F22C06001DA5F142002FB4AD /* ui_sample.xcdatamodeld in Sources */,
 			);

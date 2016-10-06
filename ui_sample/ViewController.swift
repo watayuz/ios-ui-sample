@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import FillableLoaders
 
 class ViewController: UIViewController {
+    
+    //FillableLoader
+    var loader = FillableLoader()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +22,17 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loader.removeLoader(false)
+        loader = PlainLoader.showLoader(with: path())
+        
+    }
+    
+    func path() -> CGPath {
+        return Paths.twitterPath()
     }
 
 

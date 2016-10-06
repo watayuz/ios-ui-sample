@@ -6,3 +6,7 @@ github "kentya6/KYCircularProgress"
 
 #サイドバー(ドロワー)
 github "ykyouhei/KYDrawerController"
+
+#アニメーション付きProgressライブラリ
+#なかなか良さげ
+github "poolqf/FillableLoaders"

@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  ui_sample
 //
-//  Created by 渡辺優太 on 2016/10/06.
 //  Copyright © 2016年 渡辺優太. All rights reserved.
 //
 

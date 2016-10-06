@@ -11,6 +11,9 @@ import LTMorphingLabel
 
 class MorphingViewController: UIViewController, LTMorphingLabelDelegate {
     
+    
+    @IBOutlet weak var segment: UISegmentedControl!
+    
     @IBOutlet var morphingLabel: LTMorphingLabel!
     @IBOutlet weak var name: UILabel!
     
@@ -23,13 +26,15 @@ class MorphingViewController: UIViewController, LTMorphingLabelDelegate {
         "", "Swift", "Objective-C", "iPhone", "iPad", "Mac Mini",
         "MacBook Pro🔥", "Mac Pro⚡️",
         "爱老婆",
-        "老婆和女儿"
+        "老婆和女儿",
+        
+        
     ]
     
     var pressCount = 0
     
     override func viewDidAppear(_ animated: Bool) {
-        self.morphingLabel.morphingEffect = .evaporate
+//        self.morphingLabel.morphingEffect = .evaporate
     }
     
     override func viewDidLoad() {
@@ -44,36 +49,41 @@ class MorphingViewController: UIViewController, LTMorphingLabelDelegate {
     
     
     @IBAction func pressed(_ sender: AnyObject) {
-        pressCount += 1
-        print(pressCount)
         
-        switch pressCount {
+        let segmentIndex = segment.selectedSegmentIndex
+        pressCount += 1
+        switch segmentIndex {
+        case 0:
+            self.name.text = "scale"
+            self.morphingLabel.morphingEffect = .scale
         case 1:
-            self.name.text = "evaporate"
+            self.name.text = "Evaporate"
             self.morphingLabel.morphingEffect = .evaporate
         case 2:
-            self.name.text = "fall"
+            self.name.text = "Fall"
             self.morphingLabel.morphingEffect = .fall
         case 3:
-            self.name.text = "pixelate"
+            self.name.text = "Pixelate"
             self.morphingLabel.morphingEffect = .pixelate
         case 4:
-            self.name.text = "sparkle"
+            self.name.text = "Sparkle"
             self.morphingLabel.morphingEffect = .sparkle
         case 5:
-            self.name.text = "burn"
+            self.name.text = "Burn"
             self.morphingLabel.morphingEffect = .burn
         case 6:
-            self.name.text = "anvil"
+            self.name.text = "Anvil"
             self.morphingLabel.morphingEffect = .anvil
         default:
-            self.name.text = "scale"
+            self.name.text = "Select segment"
+            break
+            
         }
         
         // Label textが更新されたタイミングでanimationする
         self.morphingLabel.text = self.textArray[pressCount]
         
-        if pressCount == 7 {
+        if pressCount == self.textArray.count - 1 {
             pressCount = 0
         }
     }

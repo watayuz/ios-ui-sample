@@ -42,7 +42,7 @@
 		91D17B1E1DA638F70057AF32 /* KYCircularProgress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KYCircularProgress.framework; path = Carthage/Build/iOS/KYCircularProgress.framework; sourceTree = "<group>"; };
 		91D17B1F1DA638F70057AF32 /* KYDrawerController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KYDrawerController.framework; path = Carthage/Build/iOS/KYDrawerController.framework; sourceTree = "<group>"; };
 		91D17B201DA638F70057AF32 /* LTMorphingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LTMorphingLabel.framework; path = Carthage/Build/iOS/LTMorphingLabel.framework; sourceTree = "<group>"; };
-		91D17B271DA63A080057AF32 /* MorphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MorphingViewController.swift; path = ../MorphingViewController.swift; sourceTree = "<group>"; };
+		91D17B271DA63A080057AF32 /* MorphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphingViewController.swift; sourceTree = "<group>"; };
 		F22C05F41DA5F142002FB4AD /* ui_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22C05F71DA5F142002FB4AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F22C05F91DA5F142002FB4AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -467,6 +467,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ui_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "myown.ui-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +485,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = ui_sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "myown.ui-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";

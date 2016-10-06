@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,6 +27,11 @@
                                     <segue destination="Dl8-3S-4oc" kind="show" id="uFU-fU-Qls"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31d-og-mka">
+                                <frame key="frameInset" minX="164" minY="214" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -33,6 +39,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-138" y="91"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uat-hs-g3s">
+            <objects>
+                <viewController id="7ZU-f6-Duk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2R-vl-q5b"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJJ-Qi-Xtd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vnh-5I-3XH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpF-qD-2H6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="90"/>
         </scene>
         <!--Morphing View Controller-->
         <scene sceneID="NAY-0P-vH0">
@@ -46,39 +70,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIy-ee-Pks" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
-                                <frame key="frameInset" minX="16" minY="192" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIy-ee-Pks" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <frame key="frameInset" minX="17" minY="127" width="343" height="75"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8z-Rd-of1">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="2zm-EY-gJH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="xP9-fj-YgC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="17P-4p-xzv"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="scale"/>
+                                    <segment title="Eva"/>
+                                    <segment title="fall"/>
+                                    <segment title="pixel"/>
+                                    <segment title="spark"/>
+                                    <segment title="burn"/>
+                                    <segment title="anvil"/>
+                                </segments>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozJ-jQ-otX">
-                                <frame key="frameInset" minX="154.5" minY="318.5" width="66" height="30"/>
+                                <frame key="frameInset" minX="154" minY="496" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Morphing"/>
                                 <connections>
                                     <action selector="pressed:" destination="Dl8-3S-4oc" eventType="touchUpInside" id="dEm-6J-kQf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8z-Rd-of1">
-                                <frame key="frameInset" minX="16" minY="119" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S8z-Rd-of1" firstAttribute="leading" secondItem="3fb-Zd-gvh" secondAttribute="leadingMargin" id="9GO-GH-KcX"/>
+                            <constraint firstItem="xP9-fj-YgC" firstAttribute="centerY" secondItem="3fb-Zd-gvh" secondAttribute="centerY" id="DUo-0d-3Rf"/>
+                            <constraint firstItem="QIy-ee-Pks" firstAttribute="leading" secondItem="3fb-Zd-gvh" secondAttribute="leadingMargin" constant="1" id="EvP-H8-6aB"/>
+                            <constraint firstItem="xP9-fj-YgC" firstAttribute="centerX" secondItem="3fb-Zd-gvh" secondAttribute="centerX" id="QKm-2F-Igy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QIy-ee-Pks" secondAttribute="trailing" constant="-1" id="TKk-X6-PXg"/>
+                            <constraint firstItem="S8z-Rd-of1" firstAttribute="trailing" secondItem="3fb-Zd-gvh" secondAttribute="trailingMargin" id="UPN-F2-Pvu"/>
+                            <constraint firstItem="S8z-Rd-of1" firstAttribute="top" secondItem="3fb-Zd-gvh" secondAttribute="topMargin" id="VDA-Sl-ENQ"/>
+                            <constraint firstItem="QIy-ee-Pks" firstAttribute="top" secondItem="S8z-Rd-of1" secondAttribute="bottom" constant="62" id="dqC-s0-lPG"/>
+                            <constraint firstItem="xP9-fj-YgC" firstAttribute="top" secondItem="QIy-ee-Pks" secondAttribute="bottom" constant="52" id="eQV-Vq-SoI"/>
+                            <constraint firstItem="S8z-Rd-of1" firstAttribute="top" secondItem="3fb-Zd-gvh" secondAttribute="topMargin" id="fhx-BU-Vu1"/>
+                            <constraint firstItem="S8z-Rd-of1" firstAttribute="trailing" secondItem="3fb-Zd-gvh" secondAttribute="trailingMargin" id="wM0-Tz-4IF"/>
+                            <constraint firstItem="S8z-Rd-of1" firstAttribute="leading" secondItem="3fb-Zd-gvh" secondAttribute="leadingMargin" id="zAc-dZ-oT6"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="morphingLabel" destination="QIy-ee-Pks" id="ovL-rM-1S9"/>
                         <outlet property="name" destination="S8z-Rd-of1" id="1tV-XH-33p"/>
+                        <outlet property="segment" destination="xP9-fj-YgC" id="uzF-uV-XqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSB-OH-01W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="89.505247376311857"/>
+            <point key="canvasLocation" x="725.60000000000002" y="-577.06146926536735"/>
         </scene>
     </scenes>
 </document>

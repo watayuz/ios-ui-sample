@@ -2,3 +2,8 @@ LTMorphingLabelというLabelの文字にエフェクトをかけることがで
 
   
 ライブラリとしてかなり使いやすかったのでiOSアプリを作るようなプロダクトになったら使っておきたい
+
+  
+
+実行したらButtonを配置したViewが表示される。  
+MorphingをTapするとMorphingEffectを使ったサンプル、FillableLoaderをTapするとProgressのサンプル。  
